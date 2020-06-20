@@ -7,18 +7,138 @@
       name="description"
       content="I’m Joel, a 26 years old, Front-end developer, from Dominican republic."
     />
-    <script
-      src="https://kit.fontawesome.com/d1bc2ede75.js"
-      crossorigin="anonymous"
-    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./sass/main.scss" />
+    <link rel="stylesheet" href="./tailwind.css" />
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
     <title>Joel Nuñez | Web Developer</title>
   </head>
-  <body></body>
+  <body class="font-muli bg-blue-primary px-6">
+    <!--navbar-->
+    <nav class="bg-blue-primary h-16 shadow-2xl flex flex-col fixed inset-0">
+      <div class="flex items-center justify-between pb-2 h-16">
+        <div class="ml-3">
+          <a href="/">
+            <svg
+              width="44"
+              height="44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 2l17.32 10v20L20 42 2.68 32V12L20 2z"
+                fill="#2676FF"
+              />
+              <path
+                opacity=".43"
+                d="M20 4l15.589 9v18L20 40 4.412 31V13L20 4z"
+                fill="#003"
+              />
+              <path
+                opacity=".43"
+                d="M20 4l15.589 9v18L20 40 4.412 31V13L20 4z"
+                fill="#003"
+              />
+              <path
+                opacity=".43"
+                d="M20 4l15.589 9v18L20 40 4.412 31V13L20 4z"
+                fill="#003"
+              />
+              <path
+                opacity=".43"
+                d="M20 4l15.589 9v18L20 40 4.412 31V13L20 4z"
+                fill="#003"
+              />
+              <path
+                opacity=".43"
+                d="M20 4l15.589 9v18L20 40 4.412 31V13L20 4z"
+                fill="#003"
+              />
+              <g opacity=".43" filter="url(#filter0_f)">
+                <path
+                  d="M20 4l15.589 9v18L20 40 4.412 31V13L20 4z"
+                  fill="#003"
+                />
+              </g>
+              <path d="M20 30l4 4-4 4-4-4 4-4z" fill="#2676FF" />
+              <path
+                d="M19 14.276L16.833 12v14.959l-2 1.626-3.166-3.09.666-4.552L9 26.31 14.833 32 19 28.585V14.276zM21 14.276L23.167 12v14.959l2 1.626 3.166-3.09-.666-4.552L31 26.31 25.167 32 21 28.585V14.276z"
+                fill="#2676FF"
+                stroke="#2676FF"
+              />
+              <defs>
+                <filter
+                  id="filter0_f"
+                  x=".412"
+                  y="0"
+                  width="44"
+                  height="44"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="2"
+                    result="effect1_foregroundBlur"
+                  />
+                </filter>
+              </defs>
+            </svg>
+          </a>
+        </div>
+        <div class="mr-3">
+          <svg
+            class="fill-current text-blue-secondary"
+            height="30"
+            viewBox="0 -53 384 384"
+            width="30"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M368 154.668H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0M368 32H16C7.168 32 0 24.832 0 16S7.168 0 16 0h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0M368 277.332H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="hidden">
+        <ul class="bg-blue-primary text-white tracking-wider text-lg">
+          <li class="p-2"><a href="#about">About</a></li>
+          <li class="p-2"><a href="#projects">Projects</a></li>
+          <li class="p-2"><a href="#contact">Contact</a></li>
+          <li class="p-2">
+            <a
+              href="https://docs.google.com/document/d/176IkWRFmIBlN9kB4dWeiP6a_lk_uxMDJfuMlwiU_Yp0/edit?usp=sharing"
+              target="_blank"
+              >Curriculum</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="flex flex-col items-center justify-center h-screen">
+      <div class="font-semibold text-gray-400">
+        <h2 class="text-xl text-blue-secondary">Hi, my name is</h2>
+        <p class="text-4xl text-gray-200">Joel Nuñez.</p>
+        <p class="text-4xl mb-2">
+          The Web is a beautiful place to build things.
+        </p>
+        <p class="text-lg text-gray-500 mb-12">
+          I'm a junior front-end developer, based in <span>Dom. Rep.</span>
+        </p>
+        <a
+          href="#about"
+          class="text-blue-secondary border-2 border-blue-secondary bg-transparent px-8 py-4 rounded tracking-widest"
+          >About Me</a
+        >
+      </div>
+    </main>
+  </body>
 </html>

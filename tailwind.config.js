@@ -3,11 +3,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        rubik: ['Rubik', 'sans-serif'],
+        muli: ['Muli', 'sans-serif'],
       },
       colors: {
-        'orange-primary': '#F24948',
-        'blue-primary': '#182858',
+        'blue-primary': '#000033',
+        'blue-secondary': '#2676ff',
       },
     },
   },
