@@ -2,4 +2,8 @@
 
 @tailwind components;
 
+.slice {
+  display: none;
+}
+
 @tailwind utilities;

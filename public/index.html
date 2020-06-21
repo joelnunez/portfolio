@@ -19,9 +19,9 @@
   <body class="font-muli bg-blue-primary px-10">
     <!--navbar-->
     <nav
-      class="bg-blue-primary h-16 shadow-2xl flex flex-col fixed inset-0 z-10"
+      class="bg-blue-primary h-16 shadow-2xl flex flex-col fixed inset-0 z-10 pt-2"
     >
-      <div class="flex items-center justify-between pb-2 h-16">
+      <div class="flex items-center justify-between">
         <div class="ml-3">
           <a href="/">
             <svg
@@ -96,7 +96,7 @@
             </svg>
           </a>
         </div>
-        <div class="mr-3">
+        <div class="mr-3" id="button">
           <svg
             class="fill-current text-blue-secondary"
             height="30"
@@ -110,12 +110,18 @@
           </svg>
         </div>
       </div>
-      <div class="hidden">
+      <div class="slice" id="menu">
         <ul class="bg-blue-primary text-white tracking-wider text-lg">
-          <li class="p-2"><a href="#about">About</a></li>
-          <li class="p-2"><a href="#projects">Projects</a></li>
-          <li class="p-2"><a href="#contact">Contact</a></li>
-          <li class="p-2">
+          <li class="p-2 font-semibold tracking-widest">
+            <a href="#about">About</a>
+          </li>
+          <li class="p-2 font-semibold tracking-widest">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="p-2 font-semibold tracking-widest">
+            <a href="#contact">Contact</a>
+          </li>
+          <li class="p-2 font-semibold text-blue-secondary tracking-widest">
             <a
               href="https://docs.google.com/document/d/176IkWRFmIBlN9kB4dWeiP6a_lk_uxMDJfuMlwiU_Yp0/edit?usp=sharing"
               target="_blank"
@@ -209,11 +215,11 @@
       <!--second website-->
       <div class="mt-8 shadow-2xl">
         <div class="relative">
-          <div class="h-64">
+          <div>
             <img
               src="./img/picture2.png"
               alt="first website"
-              class="object-cover w-full h-full"
+              class="object-cover w-full"
             />
           </div>
           <div class="absolute inset-0 text-right px-4">
@@ -277,11 +283,11 @@
       <!--first website-->
       <div class="mt-8 shadow-2xl">
         <div class="relative">
-          <div class="h-64">
+          <div>
             <img
               src="./img/picture1.png"
               alt="first website"
-              class="object-cover w-full h-full"
+              class="object-cover w-full"
             />
           </div>
           <div class="absolute inset-0 text-right px-4">
@@ -427,4 +433,16 @@
       </div>
     </footer>
   </body>
+  <script>
+    const button = document.querySelector('#button')
+    const menu = document.querySelector('#menu')
+
+    button.addEventListener('click', (e) => {
+      if (menu.classList.contains('slice')) {
+        menu.classList.remove('slice')
+      } else {
+        menu.classList.add('slice')
+      }
+    })
+  </script>
 </html>
