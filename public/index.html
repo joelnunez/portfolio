@@ -7,6 +7,7 @@
       name="description"
       content="I’m Joel, a 26 years old, Front-end developer, from Dominican republic."
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -20,6 +21,11 @@
     <!--navbar-->
     <nav
       class="bg-blue-primary h-16 shadow-2xl flex flex-col fixed inset-0 z-10 pt-2 sm:px-8 xl:px-20"
+      data-aos="fade"
+      data-aos-delay="300"
+      data-aos-duration="500"
+      data-aos-once="true"
+      data-aos-easing="ease-in-out"
     >
       <div class="flex items-center justify-between">
         <div class="ml-3">
@@ -114,21 +120,49 @@
             <li
               class="p-2 font-semibold tracking-widest hover:text-blue-secondary transition-all transition duration-300 ease-in-out"
             >
-              <a href="#about">About</a>
+              <a
+                href="#about"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+                >About</a
+              >
             </li>
             <li
               class="p-2 font-semibold tracking-widest hover:text-blue-secondary transition-all transition duration-300 ease-in-out"
             >
-              <a href="#projects">Projects</a>
+              <a
+                href="#projects"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+                >Projects</a
+              >
             </li>
             <li
               class="p-2 font-semibold tracking-widest hover:text-blue-secondary transition-all transition duration-300 ease-in-out"
             >
-              <a href="#contact">Contact</a>
+              <a
+                href="#contact"
+                data-aos="fade-up"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
+                >Contact</a
+              >
             </li>
             <li class="p-2 font-semibold text-blue-secondary tracking-widest">
               <a
                 href="https://docs.google.com/document/d/176IkWRFmIBlN9kB4dWeiP6a_lk_uxMDJfuMlwiU_Yp0/edit?usp=sharing"
+                data-aos="fade-up"
+                data-aos-delay="700"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-easing="ease-in-out"
                 target="_blank"
                 class="border border-blue-secondary px-4 py-2 rounded hover:bg-blue-secondary hover:text-white transition-all transition duration-300 ease-in-out"
                 >Curriculum</a
@@ -140,18 +174,19 @@
       <div class="slice" id="menu">
         <ul class="bg-blue-primary text-white tracking-wider text-lg">
           <li class="p-2 font-semibold tracking-widest">
-            <a href="#about">About</a>
+            <a href="#about" id="menuAbout">About</a>
           </li>
           <li class="p-2 font-semibold tracking-widest">
-            <a href="#projects">Projects</a>
+            <a href="#projects" id="menuProjects">Projects</a>
           </li>
           <li class="p-2 font-semibold tracking-widest">
-            <a href="#contact">Contact</a>
+            <a href="#contact" id="menuContact">Contact</a>
           </li>
           <li class="p-2 font-semibold text-blue-secondary tracking-widest">
             <a
               href="https://docs.google.com/document/d/176IkWRFmIBlN9kB4dWeiP6a_lk_uxMDJfuMlwiU_Yp0/edit?usp=sharing"
               target="_blank"
+              id="menuCurriculum"
               >Curriculum</a
             >
           </li>
@@ -161,23 +196,67 @@
     <!--main section-->
     <section class="flex flex-col items-center justify-center h-screen w-full">
       <div class="font-semibold text-gray-400 w-full">
-        <h2 class="text-xl text-blue-secondary sm:text-2xl">Hi, my name is</h2>
-        <p class="text-4xl text-gray-200 sm:text-5xl">Joel Nuñez.</p>
-        <p class="text-4xl mb-2 sm:text-5xl">
+        <h2
+          class="text-xl text-blue-secondary sm:text-2xl"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-once="true"
+          data-aos-easing="ease-in-out"
+        >
+          Hi, my name is
+        </h2>
+        <p
+          class="text-4xl text-gray-200 sm:text-5xl"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="500"
+          data-aos-once="true"
+          data-aos-easing="ease-in-out"
+        >
+          Joel Nuñez.
+        </p>
+        <p
+          class="text-4xl mb-2 sm:text-5xl"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="500"
+          data-aos-once="true"
+          data-aos-easing="ease-in-out"
+        >
           The Web is a beautiful place to build things.
         </p>
-        <p class="text-lg text-gray-500 mb-12">
+        <p
+          class="text-lg text-gray-500 mb-12"
+          data-aos="fade-up"
+          data-aos-delay="700"
+          data-aos-duration="500"
+          data-aos-once="true"
+          data-aos-easing="ease-in-out"
+        >
           I'm a junior front-end developer, based in <span>Dom. Rep.</span>
         </p>
         <a
           href="#about"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          data-aos-easing="ease-in-out"
           class="text-blue-secondary border-2 border-blue-secondary bg-transparent px-8 py-4 rounded tracking-widest sm:text-xl hover:bg-blue-secondary hover:text-white transition-all transition duration-300 ease-in-out"
           >About Me</a
         >
       </div>
     </section>
     <!--about section-->
-    <section id="about" class="h-screen m-2 lg:pb-64 lg:h-full target">
+    <section
+      id="about"
+      class="h-screen m-2 lg:pb-64 lg:h-full target"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-once="true"
+      data-aos-easing="ease-in-out"
+      data-offset="120"
+    >
       <h2
         class="text-blue-secondary text-left text-2xl font-semibold tracking-wide mb-4 sm:text-3xl sm:pl-2 twist relative inline-block"
       >
@@ -226,7 +305,15 @@
       </div>
     </section>
     <!--projects section-->
-    <section id="projects" class="text-white mb-32">
+    <section
+      id="projects"
+      class="text-white mb-32"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-once="true"
+      data-aos-easing="ease-in-out"
+      data-offset="120"
+    >
       <div class="mb-4">
         <h2
           class="text-blue-secondary text-2xl tracking-wide mb-6 font-semibold twist relative inline-block sm:text-3xl sm:pl-2"
@@ -377,23 +464,48 @@
     <footer id="contact" class="text-center py-10">
       <h2
         class="text-blue-secondary text-2xl tracking-wide mb-6 font-semibold twist relative inline-block sm:text-3xl sm:pl-2"
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-once="true"
+        data-aos-easing="ease-in-out"
+        data-offset="120"
       >
         Contact
       </h2>
 
       <div class="text-white mb-4 sm:text-xl">
-        <p>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-once="true"
+          data-aos-easing="ease-in-out"
+          data-offset="120"
+        >
           if you want to
           <span class="text-blue-secondary italic tracking-wide">talk</span>
         </p>
       </div>
       <div class="text-white tracking-wide mb-6 sm:text-xl">
-        <p class="sm:px-32">
+        <p
+          class="sm:px-32"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-once="true"
+          data-aos-easing="ease-in-out"
+          data-offset="120"
+        >
           I'm looking for news opportunities to learn and expand my knowledge,
           if you have a question or want to contact me, click the button bellow.
         </p>
       </div>
-      <div class="my-16">
+      <div
+        class="my-16"
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-once="true"
+        data-aos-easing="ease-in-out"
+        data-offset="120"
+      >
         <a
           href="mailto:joelnun3z@gmail.com"
           class="border border-blue-secondary shadow-2xl bg-transparent text-blue-secondary py-4 px-10 rounded sm:text-xl hover:bg-blue-secondary hover:text-white transition-all transition duration-300 ease-in-out"
@@ -401,7 +513,14 @@
         >
       </div>
 
-      <div class="flex items-center justify-center vertical">
+      <div
+        class="flex items-center justify-center vertical"
+        data-aos="fade-right"
+        data-aos-duration="500"
+        data-aos-once="true"
+        data-aos-easing="ease-in-out"
+        data-offset="120"
+      >
         <a href="https://github.com/joelnunez" target="_blank">
           <svg
             class="fill-current text-white w-6 sm:w-8 xl:w-10 hover:text-blue-secondary transition-all transition duration-300 ease-in-out"
@@ -443,32 +562,53 @@
           </svg>
         </a>
       </div>
-      <div class="w-full flex justify-center items-center mt-12">
+      <div
+        class="w-full flex justify-center items-center mt-12"
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-once="true"
+        data-aos-easing="ease-in-out"
+        data-offset="120"
+      >
         <img src="./img/icon.png" alt="icon png" class="w-20" />
       </div>
-      <div class="text-white tracking-wide font-semibold py-6 sm:text-xl">
-        <p>
-          Designed and created by Joel Nuñez
-        </p>
+      <div
+        class="text-white tracking-wide font-semibold py-6 sm:text-xl"
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-once="true"
+        data-aos-easing="ease-in-out"
+      >
+        Designed and created by Joel Nuñez
       </div>
     </footer>
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
   <script type="module">
     const button = document.querySelector('#button')
     const menu = document.querySelector('#menu')
 
+    const about = document.querySelector('#menuAbout')
+    const projects = document.querySelector('#menuProjects')
+    const curr = document.querySelector('#menuCurriculum')
+    const contact = document.querySelector('#menuContact')
+
+    const arr = [about, projects, contact, curr].forEach((el) => {
+      el.addEventListener('click', () => {
+        menu.classList.toggle('slice')
+      })
+    })
+
     button.addEventListener('click', (e) => {
-      if (menu.classList.contains('slice')) {
-        menu.classList.remove('slice')
-      } else {
-        menu.classList.add('slice')
-      }
+      menu.classList.toggle('slice')
     })
     //smooth scroll library
     var scroll = new SmoothScroll('a[href*="#"]', {
       offset: 100,
       speed: 800,
     })
+    //Aos library
+    AOS.init()
   </script>
 </html>
