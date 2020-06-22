@@ -16,10 +16,10 @@
     <title>Joel Nuñez | Web Developer</title>
   </head>
 
-  <body class="font-muli bg-blue-primary px-10">
+  <body class="font-muli bg-blue-primary px-10 xl:px-56">
     <!--navbar-->
     <nav
-      class="bg-blue-primary h-16 shadow-2xl flex flex-col fixed inset-0 z-10 pt-2 sm:px-8"
+      class="bg-blue-primary h-16 shadow-2xl flex flex-col fixed inset-0 z-10 pt-2 sm:px-8 xl:px-20"
     >
       <div class="flex items-center justify-between">
         <div class="ml-3">
@@ -96,7 +96,7 @@
             </svg>
           </a>
         </div>
-        <div class="mr-3" id="button">
+        <div class="mr-3 lg:hidden" id="button">
           <svg
             class="fill-current text-blue-secondary"
             height="30"
@@ -108,6 +108,33 @@
               d="M368 154.668H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0M368 32H16C7.168 32 0 24.832 0 16S7.168 0 16 0h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0M368 277.332H16c-8.832 0-16-7.168-16-16s7.168-16 16-16h352c8.832 0 16 7.168 16 16s-7.168 16-16 16zm0 0"
             />
           </svg>
+        </div>
+        <div class="hidden lg:block">
+          <ul class="bg-blue-primary text-white tracking-wider text-lg flex">
+            <li
+              class="p-2 font-semibold tracking-widest hover:text-blue-secondary transition-all transition duration-300 ease-in-out"
+            >
+              <a href="#about">About</a>
+            </li>
+            <li
+              class="p-2 font-semibold tracking-widest hover:text-blue-secondary transition-all transition duration-300 ease-in-out"
+            >
+              <a href="#projects">Projects</a>
+            </li>
+            <li
+              class="p-2 font-semibold tracking-widest hover:text-blue-secondary transition-all transition duration-300 ease-in-out"
+            >
+              <a href="#contact">Contact</a>
+            </li>
+            <li class="p-2 font-semibold text-blue-secondary tracking-widest">
+              <a
+                href="https://docs.google.com/document/d/176IkWRFmIBlN9kB4dWeiP6a_lk_uxMDJfuMlwiU_Yp0/edit?usp=sharing"
+                target="_blank"
+                class="border border-blue-secondary px-4 py-2 rounded hover:bg-blue-secondary hover:text-white transition-all transition duration-300 ease-in-out"
+                >Curriculum</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
       <div class="slice" id="menu">
@@ -144,13 +171,13 @@
         </p>
         <a
           href="#about"
-          class="text-blue-secondary border-2 border-blue-secondary bg-transparent px-8 py-4 rounded tracking-widest sm:text-xl"
+          class="text-blue-secondary border-2 border-blue-secondary bg-transparent px-8 py-4 rounded tracking-widest sm:text-xl hover:bg-blue-secondary hover:text-white transition-all transition duration-300 ease-in-out"
           >About Me</a
         >
       </div>
     </section>
     <!--about section-->
-    <section id="about" class="h-screen">
+    <section id="about" class="h-screen m-2 lg:pb-64 lg:h-full target">
       <h2
         class="text-blue-secondary text-left text-2xl font-semibold tracking-wide mb-4 sm:text-3xl sm:pl-2 twist relative inline-block"
       >
@@ -207,15 +234,17 @@
       </h2>
 
       <div class="mb-4">
-        <p class="text-lg sm:text-xl">
+        <p class="text-lg sm:text-xl lg:text-2xl">
           Check <span class="italic text-blue-secondary">what </span>l've been
           doing <span class="italic text-blue-secondary">lately</span>
         </p>
       </div>
-      <div class="sm:px-2">
+      <div>
         <!--second website-->
-        <div class="mt-8 shadow-2xl">
-          <div class="relative">
+        <div
+          class="mt-8 shadow-2xl lg:rounded-md overflow-hidden lg:bg-gray-100"
+        >
+          <div class="relative lg:flex">
             <div>
               <img
                 src="./img/picture2.png"
@@ -224,21 +253,23 @@
               />
             </div>
             <div
-              class="absolute inset-0 text-right px-4 sm:flex sm:flex-col sm:items-end sm:justify-center"
+              class="absolute inset-0 text-right px-4 sm:flex sm:flex-col sm:items-end sm:justify-center lg:relative"
             >
               <div>
                 <h2
-                  class="text-blue-secondary text-xl font-extrabold tracking-wide sm:text-2xl"
+                  class="text-blue-secondary text-xl font-extrabold tracking-wide sm:text-xl lg:text-blue-primary"
                 >
                   Headphonely
                 </h2>
-                <p class="py-2 sm:text-xl">
+                <p
+                  class="py-2 sm:text-xl lg:text-lg lg:bg-blue-secondary lg:rounded lg:p-4 lg:shadow-xl"
+                >
                   I started to use tailwindcss for this proyect, tailwind is so
                   easy to understand, this is an example of an ecommerce
                   website.
                 </p>
                 <p
-                  class="text-blue-secondary font-bold text-sm py-2 tracking-wide sm:text-xl"
+                  class="text-blue-secondary font-bold text-sm py-2 tracking-wide sm:text-xl lg:font-normal lg:text-lg lg:text-blue-primary"
                 >
                   Tailwindcss
                 </p>
@@ -250,7 +281,7 @@
                   target="_blank"
                 >
                   <svg
-                    class="fill-current text-white w-6 sm:w-8"
+                    class="fill-current text-white w-6 sm:w-8 lg:text-blue-secondary hover:text-blue-primary transition-all transition duration-300 ease-in-out"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -264,7 +295,7 @@
                   <svg
                     viewBox="0 0 64 64"
                     xmlns="http://www.w3.org/2000/svg"
-                    class="fill-current text-white w-8 sm:w-12"
+                    class="fill-current text-white w-6 sm:w-12 lg:text-blue-secondary hover:text-blue-primary transition-all transition duration-300 ease-in-out"
                   >
                     <path
                       d="M55 12H9a1 1 0 00-1 1v38a1 1 0 001 1h46a1 1 0 001-1V13a1 1 0 00-1-1zm-1 6h-7a1 1 0 100 2h7v30H10V20h31a1 1 0 100-2H10v-4h44z"
@@ -285,9 +316,11 @@
           </div>
         </div>
         <!--first website-->
-        <div class="mt-8 shadow-2xl">
-          <div class="relative">
-            <div>
+        <div
+          class="mt-8 shadow-2xl lg:rounded-md overflow-hidden lg:bg-gray-100"
+        >
+          <div class="relative lg:flex">
+            <div class="xl:w-1/2">
               <img
                 src="./img/picture1.png"
                 alt="first website"
@@ -295,22 +328,23 @@
               />
             </div>
             <div
-              class="absolute inset-0 text-right px-4 sm:flex sm:flex-col sm:items-end sm:justify-center"
+              class="absolute inset-0 text-right px-4 sm:flex sm:flex-col sm:items-end sm:justify-center lg:relative xl:w-1/2"
             >
               <div>
                 <h2
-                  class="text-blue-secondary text-xl font-extrabold tracking-wide sm:text-2xl"
+                  class="text-blue-secondary text-xl font-extrabold tracking-wide sm:text-xl lg:text-blue-primary"
                 >
                   Personal website v1.0
                 </h2>
-                <p class="py-2 sm:text-xl">
-                  This was my first website, l put it here, because l want to
-                  show my grow in coding skills. You can compare the actual
+                <p
+                  class="py-2 sm:text-xl lg:text-lg lg:bg-blue-secondary lg:rounded lg:p-4 lg:shadow-xl"
+                >
+                  This was my first website. You can compare the actual
                   portfolio with this, they have similar design, but differents
                   technologies.
                 </p>
                 <p
-                  class="text-blue-secondary font-bold text-sm py-2 tracking-wide sm:text-xl"
+                  class="text-blue-secondary font-bold text-sm py-2 tracking-wide sm:text-xl lg:font-normal lg:text-lg lg:text-blue-primary"
                 >
                   Html - Css - Javascript - Sass
                 </p>
@@ -322,7 +356,7 @@
                   target="_blank"
                 >
                   <svg
-                    class="fill-current text-white w-6 sm:w-8"
+                    class="fill-current text-white w-6 sm:w-8 lg:text-blue-secondary hover:text-blue-primary transition-all transition duration-300 ease-in-out"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -339,7 +373,7 @@
                   <svg
                     viewBox="0 0 64 64"
                     xmlns="http://www.w3.org/2000/svg"
-                    class="fill-current text-white w-8 sm:w-12"
+                    class="fill-current text-white w-6 sm:w-12 lg:text-blue-secondary hover:text-blue-primary transition-all transition duration-300 ease-in-out"
                   >
                     <path
                       d="M55 12H9a1 1 0 00-1 1v38a1 1 0 001 1h46a1 1 0 001-1V13a1 1 0 00-1-1zm-1 6h-7a1 1 0 100 2h7v30H10V20h31a1 1 0 100-2H10v-4h44z"
@@ -384,15 +418,15 @@
       <div class="my-16">
         <a
           href="mailto:joelnun3z@gmail.com"
-          class="border border-blue-secondary bg-transparent text-blue-secondary py-4 px-10 rounded sm:text-xl"
+          class="border border-blue-secondary shadow-2xl bg-transparent text-blue-secondary py-4 px-10 rounded sm:text-xl hover:bg-blue-secondary hover:text-white transition-all transition duration-300 ease-in-out"
           >Say Hi!</a
         >
       </div>
 
-      <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center vertical">
         <a href="https://github.com/joelnunez" target="_blank">
           <svg
-            class="fill-current text-white w-6 sm:w-8"
+            class="fill-current text-white w-6 sm:w-8 xl:w-10 hover:text-blue-secondary transition-all transition duration-300 ease-in-out"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -403,11 +437,11 @@
         </a>
         <a
           href="https://www.linkedin.com/in/joel-nu%C3%B1ez-896498188/"
-          class="mx-12"
+          class="mx-12 xl:my-12"
           target="_blank"
         >
           <svg
-            class="fill-current text-white w-6 sm:w-8"
+            class="fill-current text-white w-6 sm:w-8 xl:w-10 hover:text-blue-secondary transition-all transition duration-300 ease-in-out"
             viewBox="0 0 512 512"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -418,7 +452,7 @@
         </a>
         <a href="https://www.instagram.com/joelnun3z/" target="_blank">
           <svg
-            class="fill-current text-white w-6 sm:w-8"
+            class="fill-current text-white w-6 sm:w-8 xl:w-10 hover:text-blue-secondary transition-all transition duration-300 ease-in-out"
             viewBox="0 0 511 511.9"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -441,7 +475,8 @@
       </div>
     </footer>
   </body>
-  <script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <script type="module">
     const button = document.querySelector('#button')
     const menu = document.querySelector('#menu')
 
@@ -451,6 +486,11 @@
       } else {
         menu.classList.add('slice')
       }
+    })
+    //smooth scroll library
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      offset: 100,
+      speed: 800,
     })
   </script>
 </html>
