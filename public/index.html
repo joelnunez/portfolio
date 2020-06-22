@@ -19,7 +19,7 @@
   <body class="font-muli bg-blue-primary px-10">
     <!--navbar-->
     <nav
-      class="bg-blue-primary h-16 shadow-2xl flex flex-col fixed inset-0 z-10 pt-2"
+      class="bg-blue-primary h-16 shadow-2xl flex flex-col fixed inset-0 z-10 pt-2 sm:px-8"
     >
       <div class="flex items-center justify-between">
         <div class="ml-3">
@@ -131,12 +131,12 @@
         </ul>
       </div>
     </nav>
-
-    <section class="flex flex-col items-center justify-center h-screen">
-      <div class="font-semibold text-gray-400">
-        <h2 class="text-xl text-blue-secondary">Hi, my name is</h2>
-        <p class="text-4xl text-gray-200">Joel Nuñez.</p>
-        <p class="text-4xl mb-2">
+    <!--main section-->
+    <section class="flex flex-col items-center justify-center h-screen w-full">
+      <div class="font-semibold text-gray-400 w-full">
+        <h2 class="text-xl text-blue-secondary sm:text-2xl">Hi, my name is</h2>
+        <p class="text-4xl text-gray-200 sm:text-5xl">Joel Nuñez.</p>
+        <p class="text-4xl mb-2 sm:text-5xl">
           The Web is a beautiful place to build things.
         </p>
         <p class="text-lg text-gray-500 mb-12">
@@ -144,19 +144,19 @@
         </p>
         <a
           href="#about"
-          class="text-blue-secondary border-2 border-blue-secondary bg-transparent px-8 py-4 rounded tracking-widest"
+          class="text-blue-secondary border-2 border-blue-secondary bg-transparent px-8 py-4 rounded tracking-widest sm:text-xl"
           >About Me</a
         >
       </div>
     </section>
-
+    <!--about section-->
     <section id="about" class="h-screen">
-      <div>
-        <h2 class="text-blue-secondary text-left text-2xl tracking-wide mb-4">
-          About Me
-        </h2>
-      </div>
-      <div>
+      <h2
+        class="text-blue-secondary text-left text-2xl font-semibold tracking-wide mb-4 sm:text-3xl sm:pl-2 twist relative inline-block"
+      >
+        About Me
+      </h2>
+      <div class="sm:text-xl sm:py-4 sm:my-4">
         <p class="text-white mb-2 tracking-wide">
           <span class="mb-2 block"
             >Hello! I'm Barney Joel Nuñez, a junior Front-End web developer
@@ -176,10 +176,10 @@
         </p>
       </div>
       <div>
-        <p class="text-white font-bold text-left tracking-wide">
+        <p class="text-white font-bold text-left tracking-wide sm:text-lg">
           Here are a few technologies l have been studying and familiar with:
         </p>
-        <ul class="flex flex-wrap items-center mt-4 text-white">
+        <ul class="flex flex-wrap items-center mt-4 text-white sm:text-lg">
           <li class="bg-blue-secondary rounded m-1 px-2">
             Html
           </li>
@@ -198,177 +198,185 @@
         </ul>
       </div>
     </section>
-
+    <!--projects section-->
     <section id="projects" class="text-white mb-32">
-      <div>
-        <h2 class="text-blue-secondary text-2xl tracking-wide mb-6">
-          Projects
-        </h2>
-      </div>
+      <h2
+        class="text-blue-secondary text-2xl tracking-wide mb-6 font-semibold twist relative inline-block sm:text-3xl sm:pl-2"
+      >
+        Projects
+      </h2>
+
       <div class="mb-4">
-        <p class="text-lg">
+        <p class="text-lg sm:text-xl">
           Check <span class="italic text-blue-secondary">what </span>l've been
           doing <span class="italic text-blue-secondary">lately</span>
         </p>
       </div>
-
-      <!--second website-->
-      <div class="mt-8 shadow-2xl">
-        <div class="relative">
-          <div>
-            <img
-              src="./img/picture2.png"
-              alt="first website"
-              class="object-cover w-full"
-            />
-          </div>
-          <div class="absolute inset-0 text-right px-4">
+      <div class="sm:px-2">
+        <!--second website-->
+        <div class="mt-8 shadow-2xl">
+          <div class="relative">
             <div>
-              <h2
-                class="text-blue-secondary text-xl font-extrabold tracking-wide"
-              >
-                Headphonely
-              </h2>
-              <p class="py-2">
-                I started to use tailwindcss for this proyect, tailwind is so
-                easy to understand, this is an example of an ecommerce website.
-              </p>
-              <p
-                class="text-blue-secondary font-bold text-sm py-2 tracking-wide"
-              >
-                Tailwindcss
-              </p>
+              <img
+                src="./img/picture2.png"
+                alt="first website"
+                class="object-cover w-full"
+              />
             </div>
-            <div class="flex items-center justify-end">
-              <a
-                href="https://github.com/joelnunez/headphonely"
-                class="mr-4"
-                target="_blank"
-              >
-                <svg
-                  class="fill-current text-white w-6"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="absolute inset-0 text-right px-4 sm:flex sm:flex-col sm:items-end sm:justify-center"
+            >
+              <div>
+                <h2
+                  class="text-blue-secondary text-xl font-extrabold tracking-wide sm:text-2xl"
                 >
-                  <path
-                    d="M12 .5C5.37.5 0 5.78 0 12.292c0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56C20.565 21.917 24 17.495 24 12.292 24 5.78 18.627.5 12 .5z"
-                  />
-                </svg>
-              </a>
+                  Headphonely
+                </h2>
+                <p class="py-2 sm:text-xl">
+                  I started to use tailwindcss for this proyect, tailwind is so
+                  easy to understand, this is an example of an ecommerce
+                  website.
+                </p>
+                <p
+                  class="text-blue-secondary font-bold text-sm py-2 tracking-wide sm:text-xl"
+                >
+                  Tailwindcss
+                </p>
+              </div>
+              <div class="flex items-center justify-end">
+                <a
+                  href="https://github.com/joelnunez/headphonely"
+                  class="mr-4"
+                  target="_blank"
+                >
+                  <svg
+                    class="fill-current text-white w-6 sm:w-8"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 .5C5.37.5 0 5.78 0 12.292c0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56C20.565 21.917 24 17.495 24 12.292 24 5.78 18.627.5 12 .5z"
+                    />
+                  </svg>
+                </a>
 
-              <a href="https://headphonely.netlify.app/" target="_blank">
-                <svg
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="fill-current text-white w-8"
-                >
-                  <path
-                    d="M55 12H9a1 1 0 00-1 1v38a1 1 0 001 1h46a1 1 0 001-1V13a1 1 0 00-1-1zm-1 6h-7a1 1 0 100 2h7v30H10V20h31a1 1 0 100-2H10v-4h44z"
-                  />
-                  <path
-                    d="M26 23a1 1 0 001 1h23v22h-7a1 1 0 100 2h8a1 1 0 001-1V23a1 1 0 00-1-1H27a1 1 0 00-1 1zM37 46H14V24h7a1 1 0 100-2h-8a1 1 0 00-1 1v24a1 1 0 001 1h24a1 1 0 100-2z"
-                  />
-                  <path
-                    d="M17 28a1 1 0 00-1 1v12a1 1 0 001 1h8a1 1 0 001-1V29a1 1 0 00-1-1zm7 12h-6V30h6zM29 30h18a1 1 0 100-2H29a1 1 0 100 2zM29 36h16a1 1 0 100-2H29a1 1 0 100 2zM29 42h14a1 1 0 100-2H29a1 1 0 100 2z"
-                  />
-                  <circle cx="44" cy="19" r="1" />
-                  <circle cx="40" cy="47" r="1" />
-                  <circle cx="24" cy="23" r="1" />
-                </svg>
-              </a>
+                <a href="https://headphonely.netlify.app/" target="_blank">
+                  <svg
+                    viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-current text-white w-8 sm:w-12"
+                  >
+                    <path
+                      d="M55 12H9a1 1 0 00-1 1v38a1 1 0 001 1h46a1 1 0 001-1V13a1 1 0 00-1-1zm-1 6h-7a1 1 0 100 2h7v30H10V20h31a1 1 0 100-2H10v-4h44z"
+                    />
+                    <path
+                      d="M26 23a1 1 0 001 1h23v22h-7a1 1 0 100 2h8a1 1 0 001-1V23a1 1 0 00-1-1H27a1 1 0 00-1 1zM37 46H14V24h7a1 1 0 100-2h-8a1 1 0 00-1 1v24a1 1 0 001 1h24a1 1 0 100-2z"
+                    />
+                    <path
+                      d="M17 28a1 1 0 00-1 1v12a1 1 0 001 1h8a1 1 0 001-1V29a1 1 0 00-1-1zm7 12h-6V30h6zM29 30h18a1 1 0 100-2H29a1 1 0 100 2zM29 36h16a1 1 0 100-2H29a1 1 0 100 2zM29 42h14a1 1 0 100-2H29a1 1 0 100 2z"
+                    />
+                    <circle cx="44" cy="19" r="1" />
+                    <circle cx="40" cy="47" r="1" />
+                    <circle cx="24" cy="23" r="1" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!--first website-->
-      <div class="mt-8 shadow-2xl">
-        <div class="relative">
-          <div>
-            <img
-              src="./img/picture1.png"
-              alt="first website"
-              class="object-cover w-full"
-            />
-          </div>
-          <div class="absolute inset-0 text-right px-4">
+        <!--first website-->
+        <div class="mt-8 shadow-2xl">
+          <div class="relative">
             <div>
-              <h2
-                class="text-blue-secondary text-xl font-extrabold tracking-wide"
-              >
-                Personal website v1.0
-              </h2>
-              <p class="py-2">
-                This was my first website, l put it here, because l want to show
-                my grow in coding skills. You can compare the actual portfolio
-                with this, they have similar design, but differents
-                technologies.
-              </p>
-              <p
-                class="text-blue-secondary font-bold text-sm py-2 tracking-wide"
-              >
-                Html - Css - Javascript - Sass
-              </p>
+              <img
+                src="./img/picture1.png"
+                alt="first website"
+                class="object-cover w-full"
+              />
             </div>
-            <div class="flex items-center justify-end">
-              <a
-                href="https://github.com/joelnunez/personal-website"
-                class="mr-4"
-                target="_blank"
-              >
-                <svg
-                  class="fill-current text-white w-6"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="absolute inset-0 text-right px-4 sm:flex sm:flex-col sm:items-end sm:justify-center"
+            >
+              <div>
+                <h2
+                  class="text-blue-secondary text-xl font-extrabold tracking-wide sm:text-2xl"
                 >
-                  <path
-                    d="M12 .5C5.37.5 0 5.78 0 12.292c0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56C20.565 21.917 24 17.495 24 12.292 24 5.78 18.627.5 12 .5z"
-                  />
-                </svg>
-              </a>
+                  Personal website v1.0
+                </h2>
+                <p class="py-2 sm:text-xl">
+                  This was my first website, l put it here, because l want to
+                  show my grow in coding skills. You can compare the actual
+                  portfolio with this, they have similar design, but differents
+                  technologies.
+                </p>
+                <p
+                  class="text-blue-secondary font-bold text-sm py-2 tracking-wide sm:text-xl"
+                >
+                  Html - Css - Javascript - Sass
+                </p>
+              </div>
+              <div class="flex items-center justify-end">
+                <a
+                  href="https://github.com/joelnunez/personal-website"
+                  class="mr-4"
+                  target="_blank"
+                >
+                  <svg
+                    class="fill-current text-white w-6 sm:w-8"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 .5C5.37.5 0 5.78 0 12.292c0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56C20.565 21.917 24 17.495 24 12.292 24 5.78 18.627.5 12 .5z"
+                    />
+                  </svg>
+                </a>
 
-              <a
-                href="https://joelnunez-website-v1.netlify.app/"
-                target="_blank"
-              >
-                <svg
-                  viewBox="0 0 64 64"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="fill-current text-white w-8"
+                <a
+                  href="https://joelnunez-website-v1.netlify.app/"
+                  target="_blank"
                 >
-                  <path
-                    d="M55 12H9a1 1 0 00-1 1v38a1 1 0 001 1h46a1 1 0 001-1V13a1 1 0 00-1-1zm-1 6h-7a1 1 0 100 2h7v30H10V20h31a1 1 0 100-2H10v-4h44z"
-                  />
-                  <path
-                    d="M26 23a1 1 0 001 1h23v22h-7a1 1 0 100 2h8a1 1 0 001-1V23a1 1 0 00-1-1H27a1 1 0 00-1 1zM37 46H14V24h7a1 1 0 100-2h-8a1 1 0 00-1 1v24a1 1 0 001 1h24a1 1 0 100-2z"
-                  />
-                  <path
-                    d="M17 28a1 1 0 00-1 1v12a1 1 0 001 1h8a1 1 0 001-1V29a1 1 0 00-1-1zm7 12h-6V30h6zM29 30h18a1 1 0 100-2H29a1 1 0 100 2zM29 36h16a1 1 0 100-2H29a1 1 0 100 2zM29 42h14a1 1 0 100-2H29a1 1 0 100 2z"
-                  />
-                  <circle cx="44" cy="19" r="1" />
-                  <circle cx="40" cy="47" r="1" />
-                  <circle cx="24" cy="23" r="1" />
-                </svg>
-              </a>
+                  <svg
+                    viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-current text-white w-8 sm:w-12"
+                  >
+                    <path
+                      d="M55 12H9a1 1 0 00-1 1v38a1 1 0 001 1h46a1 1 0 001-1V13a1 1 0 00-1-1zm-1 6h-7a1 1 0 100 2h7v30H10V20h31a1 1 0 100-2H10v-4h44z"
+                    />
+                    <path
+                      d="M26 23a1 1 0 001 1h23v22h-7a1 1 0 100 2h8a1 1 0 001-1V23a1 1 0 00-1-1H27a1 1 0 00-1 1zM37 46H14V24h7a1 1 0 100-2h-8a1 1 0 00-1 1v24a1 1 0 001 1h24a1 1 0 100-2z"
+                    />
+                    <path
+                      d="M17 28a1 1 0 00-1 1v12a1 1 0 001 1h8a1 1 0 001-1V29a1 1 0 00-1-1zm7 12h-6V30h6zM29 30h18a1 1 0 100-2H29a1 1 0 100 2zM29 36h16a1 1 0 100-2H29a1 1 0 100 2zM29 42h14a1 1 0 100-2H29a1 1 0 100 2z"
+                    />
+                    <circle cx="44" cy="19" r="1" />
+                    <circle cx="40" cy="47" r="1" />
+                    <circle cx="24" cy="23" r="1" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    <!--footer section-->
     <footer id="contact" class="text-center py-10">
-      <div>
-        <h2 class="text-blue-secondary text-2xl tracking-wide mb-6">
-          Contact
-        </h2>
-      </div>
-      <div class="text-white mb-4">
+      <h2
+        class="text-blue-secondary text-2xl tracking-wide mb-6 font-semibold twist relative inline-block sm:text-3xl sm:pl-2"
+      >
+        Contact
+      </h2>
+
+      <div class="text-white mb-4 sm:text-xl">
         <p>
           if you want to
           <span class="text-blue-secondary italic tracking-wide">talk</span>
         </p>
       </div>
-      <div class="text-white tracking-wide mb-6">
-        <p>
+      <div class="text-white tracking-wide mb-6 sm:text-xl">
+        <p class="sm:px-32">
           I'm looking for news opportunities to learn and expand my knowledge,
           if you have a question or want to contact me, click the button bellow.
         </p>
@@ -376,7 +384,7 @@
       <div class="my-16">
         <a
           href="mailto:joelnun3z@gmail.com"
-          class="border border-blue-secondary bg-transparent text-blue-secondary py-4 px-10 rounded"
+          class="border border-blue-secondary bg-transparent text-blue-secondary py-4 px-10 rounded sm:text-xl"
           >Say Hi!</a
         >
       </div>
@@ -384,7 +392,7 @@
       <div class="flex items-center justify-center">
         <a href="https://github.com/joelnunez" target="_blank">
           <svg
-            class="fill-current text-white w-6"
+            class="fill-current text-white w-6 sm:w-8"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -399,7 +407,7 @@
           target="_blank"
         >
           <svg
-            class="fill-current text-white w-6"
+            class="fill-current text-white w-6 sm:w-8"
             viewBox="0 0 512 512"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -410,7 +418,7 @@
         </a>
         <a href="https://www.instagram.com/joelnun3z/" target="_blank">
           <svg
-            class="fill-current text-white w-6"
+            class="fill-current text-white w-6 sm:w-8"
             viewBox="0 0 511 511.9"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -426,7 +434,7 @@
       <div class="w-full flex justify-center items-center mt-12">
         <img src="./img/icon.png" alt="icon png" class="w-20" />
       </div>
-      <div class="text-white tracking-wide font-semibold py-6">
+      <div class="text-white tracking-wide font-semibold py-6 sm:text-xl">
         <p>
           Designed and created by Joel Nuñez
         </p>
