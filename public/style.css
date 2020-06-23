@@ -23,6 +23,9 @@
   #textChange {
     font-size: 20px;
   }
+  #textChange2 {
+    font-size: 28px;
+  }
 }
 
 @media only screen and (min-width: 320px) {
