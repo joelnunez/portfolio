@@ -623,6 +623,11 @@ video {
   display: none;
 }
 
+.push {
+  position: absolute;
+  top: 62px;
+}
+
 .twist::before {
   content: '';
   position: absolute;
